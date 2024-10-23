@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<houses>
+    <house>
+        <id>4324</id>
+        <type>gdgfbg</type>
+        <area>1324</area>
+        <floors>2</floors>
+        <price>1321.5</price>
+    </house>
+    <house>
+        <id>312</id>
+        <type>ЇўЄЇ</type>
+        <area>432</area>
+        <floors>5</floors>
+        <price>432.6</price>
+    </house>
+</houses>
