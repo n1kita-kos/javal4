@@ -1,16 +1,74 @@
 [
   {
+    "id": 11,
+    "type": "fnsfks",
+    "area": 22,
+    "floors": 4,
+    "price": 131.4,
+    "discountRate": 0.0
+  },
+  {
+    "id": 312,
+    "type": "vgvj",
+    "area": 432,
+    "floors": 5,
+    "price": 432.6,
+    "discountRate": 0.0
+  },
+  {
+    "id": 312,
+    "type": "vgvj",
+    "area": 432,
+    "floors": 5,
+    "price": 432.6,
+    "discountRate": 0.0
+  },
+  {
     "id": 4324,
     "type": "gdgfbg",
     "area": 1324,
     "floors": 2,
-    "price": 1321.5
+    "price": 1321.5,
+    "discountRate": 0.0
   },
   {
-    "id": 312,
-    "type": "¯¢ª¯",
-    "area": 432,
-    "floors": 5,
-    "price": 432.6
+    "id": 4324,
+    "type": "gdgfbg",
+    "area": 1324,
+    "floors": 2,
+    "price": 1321.5,
+    "discountRate": 0.0
+  },
+  {
+    "id": 21,
+    "type": "grdrfged",
+    "area": 45,
+    "floors": 3,
+    "price": 12312.8,
+    "discountRate": 0.0
+  },
+  {
+    "id": 21,
+    "type": "grdrfged",
+    "area": 45,
+    "floors": 3,
+    "price": 12312.8,
+    "discountRate": 0.0
+  },
+  {
+    "id": 33,
+    "type": "grfdgdf",
+    "area": 11,
+    "floors": 4,
+    "price": 134214.9,
+    "discountRate": 0.0
+  },
+  {
+    "id": 33,
+    "type": "grfdgdf",
+    "area": 11,
+    "floors": 4,
+    "price": 134214.9,
+    "discountRate": 0.0
   }
 ]

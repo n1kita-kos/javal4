@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <houses>
     <house>
+        <id>11</id>
+        <type>fnsfks</type>
+        <area>22</area>
+        <floors>4</floors>
+        <price>131.4</price>
+    </house>
+    <house>
+        <id>312</id>
+        <type>vgvj</type>
+        <area>432</area>
+        <floors>5</floors>
+        <price>432.6</price>
+    </house>
+    <house>
+        <id>312</id>
+        <type>vgvj</type>
+        <area>432</area>
+        <floors>5</floors>
+        <price>432.6</price>
+    </house>
+    <house>
         <id>4324</id>
         <type>gdgfbg</type>
         <area>1324</area>
@@ -8,10 +29,38 @@
         <price>1321.5</price>
     </house>
     <house>
-        <id>312</id>
-        <type>ЇўЄЇ</type>
-        <area>432</area>
-        <floors>5</floors>
-        <price>432.6</price>
+        <id>4324</id>
+        <type>gdgfbg</type>
+        <area>1324</area>
+        <floors>2</floors>
+        <price>1321.5</price>
+    </house>
+    <house>
+        <id>21</id>
+        <type>grdrfged</type>
+        <area>45</area>
+        <floors>3</floors>
+        <price>12312.8</price>
+    </house>
+    <house>
+        <id>21</id>
+        <type>grdrfged</type>
+        <area>45</area>
+        <floors>3</floors>
+        <price>12312.8</price>
+    </house>
+    <house>
+        <id>33</id>
+        <type>grfdgdf</type>
+        <area>11</area>
+        <floors>4</floors>
+        <price>134214.9</price>
+    </house>
+    <house>
+        <id>33</id>
+        <type>grfdgdf</type>
+        <area>11</area>
+        <floors>4</floors>
+        <price>134214.9</price>
     </house>
 </houses>

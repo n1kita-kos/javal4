@@ -8,6 +8,7 @@ public abstract class House {
     protected int area;
     protected int floors;
     protected double price;
+    protected double discountRate;
 
     public House(int id, String type, int area, int floors, double price) {
         this.id = id;
@@ -56,6 +57,13 @@ public abstract class House {
     public void setPrice(double price) {
         this.price = price;
     }
+    public double getDiscountRate() {
+        return price;
+    }
+
+    public void setDiscountRate(double price) {
+        this.discountRate = price;
+    }
 
     @Override
     public String toString() {
@@ -80,7 +88,7 @@ public abstract class House {
            Double.compare(house.area, area) == 0 &&
            floors == house.floors &&
            Double.compare(house.price, price) == 0 &&
-           type.equals(house.type); // Проверяем ключевые поля
+           type.equals(house.type);
     }
 
     @Override

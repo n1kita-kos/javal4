@@ -20,7 +20,12 @@ public class HouseFactory {
     private static final String KEY_FILE = "secretKey.key"; 
     private static HouseCollection houseCollection = new HouseList();
     private static HouseCollection houseCollection2 = new HouseList();
+    private static HouseCollection houseCollection3 = new HouseList();
+
     static SecretKey key;
+    private static ExcelExporter e=ExcelExporter.getInstance();
+    
+
     
     public static void saveKeyToFile(SecretKey secretKey) throws IOException {
         try (FileOutputStream fos = new FileOutputStream(KEY_FILE)) {
@@ -46,7 +51,13 @@ public class HouseFactory {
             key = EncryptionUtils.generateKey();
             System.out.println("Новый ключ сгенерирован и сохранен.");
         }
-        System.out.println(key);
+        House basicHouse = new ConcreteHouse(1, "Modern", 100, 2, 200000);
+
+        House discountedHouse = new DiscountDecorator(basicHouse, 0.2); 
+        System.out.println("Original House Price: " + basicHouse.getPrice());
+        System.out.println("Discounted House Price: " + discountedHouse.getPrice());
+        System.out.println(discountedHouse.toString());
+        // System.out.println(key);
         Scanner scanner = new Scanner(System.in);
         String txtFilename = "houses.txt";
         String xmlFilename = "houses.xml";
@@ -71,7 +82,9 @@ public class HouseFactory {
             System.out.println("9. Сортировать по площади");
             System.out.println("10. Сохранить дома в файл");
             System.out.println("11. Прочитать дома из файла");
-            System.out.println("12. Выход");
+            System.out.println("12. Записать в таблицу");
+            System.out.println("13. Чтение из таблицы");
+            System.out.println("14. Выход");
 
             int choice = scanner.nextInt();
             switch (choice) {
@@ -109,6 +122,16 @@ public class HouseFactory {
                     readFromFile(txtFilename, xmlFilename, jsonFilename);
                     break;
                 case 12:
+                    List<House> housesEXL = houseCollection.getAllHouses();
+                    e.exportToExcel(housesEXL);
+                    break;
+                case 13:
+                    List<House> houses34= e.importFromExcel("houses.xlsx");
+                    houseSet.addAll(houses34);
+                    houseCollection.getAllHouses().addAll(houseSet);
+                    printAllHouses();
+                    break;
+                case 14:
                     System.out.println("Выход из программы.");
                     saveKeyToFile(key);
                     return;
@@ -180,6 +203,16 @@ public class HouseFactory {
     }
     private static void printAllHouses2() {
         List<House> houses = houseCollection2.getAllHouses();
+        if (houses.isEmpty()) {
+            System.out.println("Дома отсутствуют.");
+        } else {
+            for (House house : houses) {
+                System.out.println(house);
+            }
+        }
+    }
+    private static void printAllHouses3() {
+        List<House> houses = houseCollection3.getAllHouses();
         if (houses.isEmpty()) {
             System.out.println("Дома отсутствуют.");
         } else {
